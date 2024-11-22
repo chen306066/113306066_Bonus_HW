@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the form container */
+.form-container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Title */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form rows */
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    width: 15%; /* 保持固定寬度，根據需求可調整 */
+    font-weight: bold;
+    margin-right: 5px; /* 減少 label 與輸入欄位之間的間距 */
+    text-align: left;
+    flex-shrink: 0; /* 防止 label 縮小 */
+    font-size: 1.2vw; /* 響應式字體大小 */
+    white-space: nowrap; /* 防止文字換行 */
+}
+
+/* 第一列 - 全寬 */
+.full-width input {
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* 第二列 - 每欄 */
+.two-columns {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.two-columns input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#input2 {
+    width: 30%; /* Left column width */
+    margin-right: 10px; /* Spacing between input and label */
+}
+
+#input3 {
+    width: 30%; /* Right column width */
+    margin-left: auto; /* Aligns to the right */
+}
+
+/* 第三列 - 左對齊，全寬左端 */
+.full-width-left-align input {
+    width: 75%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* 第四列 - Textarea */
+textarea {
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none; /* Disable resizing */
+    height: 100px; 
+}
+
+/* 圖片區域 */
+.image-placeholder {
+    width: 85%;
+    height: auto; /* Match textarea width */
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive scaling */
+label {
+    font-size: 1.2vw; /* Scales with viewport width */
+    white-space: nowrap; /* Prevents text wrapping */
+}
