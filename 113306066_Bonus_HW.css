@@ -9,17 +9,18 @@ body {
 /* Center the form container */
 .form-container {
     width: 70%;
-    margin: 50px auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* Title */
 h1 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
     text-align: center;
 }
 
@@ -27,14 +28,16 @@ h1 {
 .form-row {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
+    overflow: hidden; /* 確保 float 不影響布局 */
 }
 
 /* Labels */
 label {
+    float: left; /* 添加 float */
     width: 15%; /* 保持固定寬度，根據需求可調整 */
     font-weight: bold;
-    margin-right: 5px; /* 減少 label 與輸入欄位之間的間距 */
+    margin-right: 1%; /* 減少 label 與輸入欄位之間的間距 */
     text-align: left;
     flex-shrink: 0; /* 防止 label 縮小 */
     font-size: 1.2vw; /* 響應式字體大小 */
@@ -43,6 +46,7 @@ label {
 
 /* 第一列 - 全寬 */
 .full-width input {
+    float: left; /* 添加 float */
     width: 85%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -57,6 +61,7 @@ label {
 }
 
 .two-columns input {
+    float: left; /* 添加 float */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -64,17 +69,20 @@ label {
 }
 
 #input2 {
+    float: left; /* 添加 float */
     width: 30%; /* Left column width */
-    margin-right: 10px; /* Spacing between input and label */
+    margin-right: 10%; /* Spacing between input and label */
 }
 
 #input3 {
+    float: right; /* 添加 float */
     width: 30%; /* Right column width */
     margin-left: auto; /* Aligns to the right */
 }
 
 /* 第三列 - 左對齊，全寬左端 */
 .full-width-left-align input {
+    float: left; /* 添加 float */
     width: 75%; 
     padding: 10px;
     border: 1px solid #ccc;
@@ -84,6 +92,7 @@ label {
 
 /* 第四列 - Textarea */
 textarea {
+    float: left; /* 添加 float */
     width: 85%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -95,6 +104,7 @@ textarea {
 
 /* 圖片區域 */
 .image-placeholder {
+    float: left; /* 添加 float */
     width: 85%;
     height: auto; /* Match textarea width */
 }
@@ -103,10 +113,4 @@ textarea {
     max-width: 100%;
     height: auto;
     display: block;
-}
-
-/* Responsive scaling */
-label {
-    font-size: 1.2vw; /* Scales with viewport width */
-    white-space: nowrap; /* Prevents text wrapping */
 }
